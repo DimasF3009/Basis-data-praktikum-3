@@ -36,3 +36,30 @@
 7. Lakukan penghapusan data pada tabel dosen.
 
 ![image](https://github.com/DimasF3009/Basis-data-praktikum-3/assets/115356128/a19514e7-0f39-4946-a91e-dfe8b630e1b0)
+
+
+
+Evaluasi dan pertanyaan.
+
+1. Apa bedanya pengguna RESTRICT dan CASCADE.?
+
+Penggunaan RESTRICT dan CASCADE adalah dua jenis aturan referential integrity (keutuhan
+referensial) yang dapat diterapkan pada kunci asing (foreign key) di basis data relasional.
+RESTRICT berarti bahwa ketika ada sebuah baris data di tabel induk (parent table) yang ingin dihapus 
+atau diubah, maka sistem basis data akan memeriksa apakah ada baris data di tabel anak (child table) 
+yang masih merujuk ke baris data tersebut. Jika ada, maka sistem basis data akan mencegah 
+penghapusan atau perubahan data pada baris data di tabel induk yang berdampak pada baris data di 
+tabel anak yang masih merujuk ke baris data tersebut.
+Sementara itu, CASCADE adalah sebuah baris data di tabel induk dihapus atau diubah, maka sistem 
+basis data akan secara otomatis menghapus atau mengubah baris data di tabel anak yang merujuk ke 
+baris data yang dihapus atau diubah tersebut.
+
+2. Berikan kesimpulan 
+
+RESTRICT dan CASCADE adalah aturan refential intrgrity Yang dapat diterapkan pada kunci asing yang 
+basis data relasional. RESTRICT mencegah penghapusan atau perubahan data pada tabel induk yang 
+berdampak pada tabel anak yang masih merujuk ke data yang di hapus atau di ubah. Sementara 
+CASCADE dengan secara otomatis menghapus atau mengubah data pada tabel anak yang merujuk ke 
+data yang di apus atau di ubah pada tabel induk. Kedua aturan tersebut memiliki kelebihan dan 
+kekurangan msing-masing dan harus dipilih secara bijak sesuai dengan kebutuhan dan konteks 
+penggunaannya agar dapat memastikan keutuhan data didalam system basis data
